@@ -1,0 +1,496 @@
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="ie=edge" http-equiv="X-UA-Compatible">
+<script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+<script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+<link rel="stylesheet" href="main.css">
+<script defer src="/dist/nft-card.min.js"></script>
+<script src="/dist/nft-card.min.js"></script>
+<link rel="stylesheet" href="mainGRID.css">
+
+
+
+<section class="gallery">
+    <div class="container">
+        <div class="toolbar">
+            <div class="search-wrapper">
+
+                <select id="artists" onChange="myNewFunction(this);">
+                    <option value="">*ALL*</option>
+             
+                    <option value="Ivana Bašić">Ivana Bašić</option>
+                    <option value="Shu Lea Cheang">Shu Lea Cheang</option>
+                    <option value="E. Jane">E. Jane</option>
+                    <option value="Angela Washko">Angela Washko</option>
+                    <option value="RaFia">RaFia</option>
+                    <option value="Agata Wieczorek">Agata Wieczorek</option>
+                    <option value="Ben Ditto">Ben Ditto</option>
+
+                </select>
+                <br><br>
+
+                <input type="submit" value="Submit" id="">
+
+            </div>
+            <ul class="view-options">
+                <li class="zoom">
+                    <input type="range" min="280" max="480" value="280">
+                </li>
+                <li class="show-grid active">
+                    <button disabled>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg" alt="grid view">  
+          </button>
+                </li>
+                <li class="show-list">
+                    <button>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg" alt="list view">  
+          </button>
+                </li>
+            </ul>
+        </div>
+
+        <ol class="image-list grid-view">
+
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469921897511911425" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Ivana Bašić
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469944987256094721" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Emma Stern
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469922997023539201" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Shu Lea Cheang
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469924096535166977" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Shu Lea Cheang
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469925196046794753" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Shu Lea Cheang
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+            <li>
+                <div class="card-container">
+                    <div style="padding-top: 5vh;"></div>
+                    <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469938390186328065" network="mainnet">
+                    </nft-card>
+                    <div style="padding-top: 5vh;"></div>
+                    <figcaption>
+                        <p>Angela Washko
+                        </p>
+                        <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                    </figcaption>
+                </div>
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469933992139816961" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469942788232839169" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Agata Wieczorek
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469941688721211393" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Agata Wieczorek
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469940589209583617" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469935091651444737" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469936191163072513" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469939489697955841" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469928494581678081" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469929594093305857" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469931793116561409" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469932892628189185" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469930693604933633" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469937290674700289" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Angela Washko
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469926295558422529" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>RaFia
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469927395070050305" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>E. Jane
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469943887744466945" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Agata Wieczorek
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469947186279350273" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Ben Ditto
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469946086767722497" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Ben Ditto
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469948285790978049" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Ben Ditto
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+
+            </li>
+            <li>
+
+
+
+        <div class="card-container">
+            <div style="padding-top: 5vh;"></div>
+            <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469949385302605825" network="mainnet">
+            </nft-card>
+            <div style="padding-top: 5vh;"></div>
+            <figcaption>
+                <p>Ben Ditto
+                </p>
+                <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+            </figcaption>
+        </div>
+
+            </li>
+         
+
+        </ol>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function myNewFunction(sel) {
+        var s = document.querySelector('input[type="submit"]');
+        s.id = sel.options[sel.selectedIndex].value;
+        console.log(s.id);
+    }
+</script>
+
+<script src="mainGRID.js"></script>
+
+
+<footer>
+    <div class="container">
+        <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+    </small>
+    </div>
+</footer>
