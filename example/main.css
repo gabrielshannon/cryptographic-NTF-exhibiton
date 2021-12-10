@@ -18,17 +18,19 @@
     height: 150px !important;
   }
 
-    .myHeaderPINK {
+  .myHeaderPINK {
     height: 150px !important;
-    width: 80% !important;
-    height: 80% !important;
+    width: 80vw !important;
   }
 
-  .grid-view-icon{
+  .grid-view-icon {
     display: none;
   }
-}
 
+  .card-container {
+    width: 80%;
+  }
+}
 
 .cryptographicLogoThin {
   width: 25%;
@@ -505,6 +507,13 @@ figcaption {
 .asset-link {
   text-decoration: none;
   color: white;
+  font-size: initial;
+  padding-bottom: 15px;
+}
+
+.asset-link:hover {
+  text-decoration: none;
+  color: white;
 }
 
 p {
@@ -579,13 +588,10 @@ p {
 /* .no-img {
         grid-template-columns: 100%;
       } */
-.no-img p {
-  /* Reverts transform (see above) */
-  /* transform: none; */
-}
 
 .collection {
   width: 100%;
+  max-width: 180px;
 }
 
 .a {
@@ -605,6 +611,7 @@ p {
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 2;
   cursor: pointer;
+  overflow: auto;
 }
 
 #text {
@@ -623,4 +630,27 @@ p {
 
 .onlyfans-link:hover {
   color: #00ffaa;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .myHeader {
+    height: 150px !important;
+  }
+
+  .myHeaderPINK {
+    height: 150px !important;
+    width: 80vw !important;
+  }
+
+  .grid-view-icon {
+    display: none;
+  }
 }

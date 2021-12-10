@@ -12,7 +12,7 @@
     <script defer src="/dist/nft-card.min.js"></script>
     <script src="/dist/nft-card.min.js"></script>
     <link rel="stylesheet" href="mainGRID.css">
-    <link rel="icon" type="image/png" href="icons/unnamed.png"/>
+    <link rel="icon" type="image/png" href="icons/unnamed.png" />
 
     <title>Crypto_Graphic</title>
     <style media="screen">
@@ -28,10 +28,19 @@
         }
         
         .card-container {
-            width: 100%;
+            /* width: 100%; */
             height: 100%;
             margin: auto;
             padding-top: 10px;
+        }
+        
+        @media only screen and (max-width: 750px) {
+     
+            #text {
+                padding-top: 50px;
+                width: 75%;
+                font-size: 16px;   
+            }
         }
     </style>
 </head>
@@ -708,7 +717,7 @@
 
                 <li>
 
-                    <div class="card-container" style="width:100%;height:81.5%;min-height:200px;max-width:670px;">
+                    <div class="card-container" style="height:81.5%;min-height:200px;max-width:670px;">
                         <div style="padding-top: 5vh;"></div>
 
                         <div class="card-inner">
