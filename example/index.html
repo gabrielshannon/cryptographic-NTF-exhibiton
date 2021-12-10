@@ -12,6 +12,7 @@
     <script defer src="/dist/nft-card.min.js"></script>
     <script src="/dist/nft-card.min.js"></script>
     <link rel="stylesheet" href="mainGRID.css">
+    <link rel="icon" type="image/png" href="icons/unnamed.png"/>
 
     <title>Crypto_Graphic</title>
     <style media="screen">
@@ -37,18 +38,33 @@
 
 <body>
 
+    <div id="overlay" onclick="off()">
+        <div id="text">
+
+            <p>ARTISTS </p>
+            <br>
+            <p>Ivana Bašić, Shu Lea Cheang, Ben Ditto, Jake Elwes, Olga Mikh Fedorova, Sophia Giovannitti, E. Jane, Signe Pierce, RaFia Santana, Jacolby Satterwhite, Emma Stern, Angela Washko, Agata Wieczorek </p>
+            <br>
+            <p>Welcome to CryptoGraphic, your one-stop shop for uncensored NFTs by top visual artists exploring sex in the digital age. Each work is specially commissioned by CryptoGraphic for this platform so take your time to explore and delve deep because
+                they are all game-changing, pioneering and substantial! Artists range from exploring World of Warcraft to female fetish suits and from using film strips and screenshots to more nascent technologies like AI and 3D scanning and animation.
+                As sex and technology become increasingly integrated, with online pornography, dating apps, cybersex, sexting, adult toys and sex tech, issues such as identity politics, the digital body, surveillance, techno-capitalism, and power structures
+                become ever more pressing. Artists use sex as a lens to address these questions. </p>
+            <br>
+            <a href="http://onlyfans.com/crypto_graphic" class="onlyfans-link">Follow us on OnlyFans! http://onlyfans.com/crypto_graphic</a>
+        </div>
+    </div>
+    </div>
+
     <div class="fullscreen-bg">
-
-
-
-        <img class="fullscreen-bg__video" src="assets/UntitledRobot.gif" alt="description of gif" />
-
-
+        <img class="fullscreen-bg__video" src="assets/newrobot.gif" alt="description of gif" />
     </div>
 
     <span class="headerSpan">
     <div class="myHeader">
          <img class="cryptographicLogo" src="assets/blueglow.svg">
+    </div>
+    <div class="myHeaderPINK">
+         &nbsp; 
     </div>
   </span>
 
@@ -150,10 +166,6 @@
                 <li>Sex</li>
                 <li>&nbsp;</li>
                 <li>Art</li>
-
-
-
-
             </ul>
         </div>
 
@@ -164,41 +176,45 @@
             <div class="toolbar">
                 <div class="search-wrapper">
 
-                    <select id="artists" onChange="myNewFunction(this);">
-                    <option value="">*ALL*</option>
-             
+                    <div class="select">
+
+                        <select class="select" onChange="myNewFunction(this);">
+                    <option value="">⋆ ALL ⋆</option>
                     <option value="Ivana Bašić">Ivana Bašić</option>
                     <option value="Shu Lea Cheang">Shu Lea Cheang</option>
+                    <option value="Ben Ditto">Ben Ditto</option>
+                    <option value="Jake Elwes">Jake Elwes</option>
+                    <option value="Olga Fedorova">Olga Mikh Fedorova</option>
+                    <option value="Sophia Giovannitti">Sophia Giovannitti</option>
+                    <option value="Signe Pierce">Signe Pierce</option>
+                    <option value="RaFia">RaFia </option>
+                    <option value="Jacolby Satterwhite">Jacolby Satterwhite</option>
+                    <option value="Emma Stern">Emma Stern</option>
                     <option value="E. Jane">E. Jane</option>
                     <option value="Angela Washko">Angela Washko</option>
-                    <option value="RaFia">RaFia</option>
                     <option value="Agata Wieczorek">Agata Wieczorek</option>
-                    <option value="Ben Ditto">Ben Ditto</option>
-
                 </select>
-                    <br><br>
-
-                    <input type="submit" value="Submit" id="">
-
+                        <div class="select_arrow"></div>
+                    </div>
                 </div>
                 <ul class="view-options">
                     <li class="zoom">
-                        <input type="range" min="180" max="380" value="280">
+                        <input type="range" min="280" max="580" value="280">
                     </li>
                     <li class="show-grid active">
                         <button disabled>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/grid-view.svg" alt="grid view">  
+            <img class="grid-view-icon" src="icons/grid-view.svg" alt="grid view">  
           </button>
                     </li>
                     <li class="show-list">
                         <button>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg" alt="list view">  
+             <img class="grid-view-icon" src="icons/list-view.svg" alt="grid view">   
           </button>
                         </button>
                     </li>
-                    <li class="show-list">
+                    <li class="show-list-info">
                         <button>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/list-view.svg" alt="list view">  
+             <img onclick="on()" class="grid-view-icon-info" src="icons/info.svg" alt="grid view">    
           </button>
 
             </div>
@@ -214,7 +230,6 @@
                         <figcaption>
                             <p>Ivana Bašić
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -228,7 +243,6 @@
                         <figcaption>
                             <p>Emma Stern
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -241,7 +255,6 @@
                         <figcaption>
                             <p>Shu Lea Cheang
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -254,7 +267,6 @@
                         <figcaption>
                             <p>Shu Lea Cheang
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -267,7 +279,6 @@
                         <figcaption>
                             <p>Shu Lea Cheang
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -280,7 +291,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -295,12 +305,29 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
 
                 </li>
+
+                <li>
+
+
+                    <div class="card-container">
+                        <div style="padding-top: 5vh;"></div>
+                        <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469950484814233601" network="mainnet">
+                        </nft-card>
+                        <div style="padding-top: 5vh;"></div>
+                        <figcaption>
+                            <p>Olga Fedorova
+                            </p>
+                        </figcaption>
+                    </div>
+
+
+                </li>
+
                 <li>
 
 
@@ -312,7 +339,6 @@
                         <figcaption>
                             <p>Agata Wieczorek
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -329,7 +355,6 @@
                         <figcaption>
                             <p>Agata Wieczorek
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -346,7 +371,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -363,7 +387,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -380,7 +403,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -396,13 +418,65 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
 
 
                 </li>
+
+                <li>
+
+
+                    <div class="card-container">
+                        <div style="padding-top: 5vh;"></div>
+                        <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469953783349116929" network="mainnet">
+                        </nft-card>
+                        <div style="padding-top: 5vh;"></div>
+                        <figcaption>
+                            <p>Sophia Giovannitti
+                            </p>
+                        </figcaption>
+                    </div>
+
+
+                </li>
+
+                <li>
+
+
+                    <div class="card-container">
+                        <div style="padding-top: 5vh;"></div>
+                        <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469951584325861377" network="mainnet">
+                        </nft-card>
+                        <div style="padding-top: 5vh;"></div>
+                        <figcaption>
+                            <p>Jacolby Satterwhite
+                            </p>
+                        </figcaption>
+                    </div>
+
+
+                </li>
+
+                <li>
+
+
+                    <div class="card-container">
+                        <div style="padding-top: 5vh;"></div>
+                        <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469952683837489153" network="mainnet">
+                        </nft-card>
+                        <div style="padding-top: 5vh;"></div>
+                        <figcaption>
+                            <p>Signe Pierce
+                            </p>
+                        </figcaption>
+                    </div>
+
+
+                </li>
+
+
                 <li>
 
 
@@ -414,7 +488,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -431,7 +504,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -448,7 +520,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -466,7 +537,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -482,7 +552,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -501,7 +570,6 @@
                         <figcaption>
                             <p>Angela Washko
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -519,7 +587,6 @@
                         <figcaption>
                             <p>RaFia
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -537,7 +604,6 @@
                         <figcaption>
                             <p>E. Jane
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -553,7 +619,23 @@
                         <figcaption>
                             <p>Agata Wieczorek
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
+                        </figcaption>
+                    </div>
+
+
+                </li>
+
+                <li>
+
+
+                    <div class="card-container">
+                        <div style="padding-top: 5vh;"></div>
+                        <nft-card tokenAddress="0x495f947276749Ce646f68AC8c248420045cb7b5e" tokenId="101377455088769287513084296953443186285585554888880067247336469954882860744705" network="mainnet">
+                        </nft-card>
+                        <div style="padding-top: 5vh;"></div>
+                        <figcaption>
+                            <p>Agata Wieczorek
+                            </p>
                         </figcaption>
                     </div>
 
@@ -571,7 +653,6 @@
                         <figcaption>
                             <p>Ben Ditto
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -587,7 +668,6 @@
                         <figcaption>
                             <p>Ben Ditto
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -604,7 +684,6 @@
                         <figcaption>
                             <p>Ben Ditto
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -622,7 +701,6 @@
                         <figcaption>
                             <p>Ben Ditto
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
 
@@ -630,7 +708,7 @@
 
                 <li>
 
-                    <div class="card-container" style="width:100%;height:82%;min-height:200px;max-width:670px;">
+                    <div class="card-container" style="width:100%;height:81.5%;min-height:200px;max-width:670px;">
                         <div style="padding-top: 5vh;"></div>
 
                         <div class="card-inner">
@@ -652,7 +730,7 @@
                                     <div class="asset-detail">
                                         <div class="asset-detail-type">
                                             <a class="asset-link" target="_blank" href="http://opensea.io/assets/crypto-graphic-collection">
-                                                <img class="collection" src="collection.png">
+                                                <img class="collection" src="collection.svg">
                                         </div>
 
                                     </div>
@@ -697,7 +775,6 @@
                         <figcaption>
                             <p>Jake Elwes
                             </p>
-                            <!-- <p>Photo by <a href="https://unsplash.com/@s_sagano" target="_blank">Sora Sagano</a></p> -->
                         </figcaption>
                     </div>
                 </li>
@@ -707,18 +784,7 @@
         </div>
     </section>
 
-    <script type="text/javascript">
-        function myNewFunction(sel) {
-            var s = document.querySelector('input[type="submit"]');
-            s.id = sel.options[sel.selectedIndex].value;
-            console.log(s.id);
-        }
-    </script>
-
     <script src="mainGRID.js"></script>
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <script src="main.js"></script>
