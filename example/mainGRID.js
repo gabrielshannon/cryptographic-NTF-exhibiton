@@ -77,11 +77,11 @@ function myNewFunction(sel) {
 }
 
 function on() {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("overlay-about").style.display = "flex";
 }
 
 function off() {
-  document.getElementById("overlay").style.display = "none";
+  document.getElementById("overlay-about").style.display = "none";
 }
 
 // function keyupHandler() {
