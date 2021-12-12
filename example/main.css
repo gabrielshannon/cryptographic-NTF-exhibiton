@@ -244,7 +244,7 @@ figcaption {
   align-items: center;
   background-image: url('assets/asset-back2.gif');
   background-size: 100% 100%;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .pinkAsset {
@@ -618,7 +618,7 @@ p {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.65);
-  z-index: 2;
+  z-index: 9999;
   cursor: pointer;
   overflow: auto;
 }
