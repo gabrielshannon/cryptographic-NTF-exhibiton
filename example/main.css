@@ -244,13 +244,14 @@ figcaption {
   align-items: center;
   background-image: url('assets/asset-back2.gif');
   background-size: 100% 100%;
+  z-index: 9999;
 }
 
 .pinkAsset {
-  /* width: 743px;
-  height: 174px; */
+  width: 743px;
+  height: 174px;
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   /* z-index: -1; */
 }
 
@@ -664,6 +665,10 @@ a:active {
     height: 150px !important;
   }
 
+  .pinkAsset {
+    height: 150px !important;
+    width: 80vw !important;
+  }
   /* .myHeaderPINK {
     height: 150px !important;
     width: 80vw !important;
